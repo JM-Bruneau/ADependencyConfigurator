@@ -1,0 +1,57 @@
+ADependencyConfigurator version 0.01
+====================================
+
+EXAMPLE
+
+<?php
+use IToArray;
+use ADependencyConfigurator;
+
+class ADepencancyConfiguratorExample extends ADependencyConfigurator
+{
+	/**
+	 * {@inheritDoc}
+	 */
+	protected $constructorSettings = array(
+		'userName' => array(
+			'isRequired' => true,
+			'type' => 'string'
+		),
+		'userType' => array(
+			'isRequired' => true,
+			'type' => 'string'
+		),
+		'userAge' => array(
+			'isRequired' => true,
+			'type' => 'integer'
+		),
+		'userIp' => array(
+			'isRequired' => true,
+			'type' => '\UserIp'
+		),
+		'userSessionId' => array(
+			'isRequired' => true,
+			'type' => 'string'
+		)
+	);
+}
+
+
+
+DEPENDENCIES
+
+This class requires these other modules and libraries:
+
+  IToArray
+  InvalidArgumentException
+  RuntimeException
+  BadMethodCallException
+  ReflectionFunction
+  Closure
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2011 by JM-Bruneau NV
+
+Licences unther  COMMON DEVELOPMENT AND DISTRIBUTION LICENSE
+Licence text available in LICENCE file.
