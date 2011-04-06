@@ -4,7 +4,6 @@ ADependencyConfigurator version 0.01
 EXAMPLE
 
 <?php
-// use IToArray; obsolete because ADependencyConfigurator already extends from it
 use ADependencyConfigurator;
 
 class ADepencancyConfiguratorExample extends ADependencyConfigurator
